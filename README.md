@@ -4,7 +4,7 @@ Sebuah aplikasi web interaktif yang menampilkan kartu profil pengguna secara aca
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-**[Link ke Live Demo]([https://#](https://random-user-generator-project.vercel.app/))** 👈 
+**[Link ke Live Demo](https://random-user-generator-project.vercel.app/)** 👈
 
 ---
 
