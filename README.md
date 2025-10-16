@@ -1,73 +1,94 @@
-# React + TypeScript + Vite
+# Random User Profile Card
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sebuah aplikasi web interaktif yang menampilkan kartu profil pengguna secara acak. Aplikasi ini mengambil data dari [Random User Generator API](https://randomuser.me/) dan menampilkannya dalam antarmuka yang bersih dan modern.
 
-Currently, two official plugins are available:
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**[Link ke Live Demo](https://#)** 👈 *(ganti dengan link deploy Anda)*
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Fitur Utama
 
-## Expanding the ESLint configuration
+-   **👤 Tampilan Profil Dinamis**: Menampilkan foto, nama, email, dan detail lainnya dari pengguna yang digenerate secara acak.
+-   **🔄 Generate User Baru**: Tombol untuk memuat profil pengguna acak yang baru tanpa perlu me-refresh halaman.
+-   **🔐 Tampilan Detail Tersembunyi**: Informasi sensitif dan detail lengkap hanya ditampilkan setelah menekan tombol "Login".
+-   **🌓 Mode Terang & Gelap**: Tombol *toggle* untuk mengubah tema antara mode terang (*light mode*) dan gelap (*dark mode*) dengan transisi yang mulus.
+-   **🧩 Arsitektur Berbasis Komponen**: Kode dipecah menjadi komponen-komponen React yang kecil, bersih, dan dapat digunakan kembali.
+-   **⏳ Indikator Loading & Error**: Memberikan umpan balik visual kepada pengguna saat data sedang dimuat atau jika terjadi kesalahan saat mengambil data.
+-   **📱 Desain Responsif**: Tampilan yang optimal di berbagai ukuran layar, dari perangkat mobile hingga desktop.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Teknologi yang Digunakan
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Proyek ini dibangun menggunakan tumpukan teknologi modern untuk pengembangan frontend:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+-   **Vite**: *Build tool* super cepat untuk pengembangan web modern.
+-   **React**: Pustaka JavaScript untuk membangun antarmuka pengguna.
+-   **TypeScript**: Menambahkan tipe statis ke JavaScript untuk meningkatkan skalabilitas dan maintainabilitas proyek.
+-   **Tailwind CSS**: Kerangka kerja CSS *utility-first* untuk desain yang cepat dan kustom.
+-   **Lucide React**: Pustaka ikon yang simpel, indah, dan ringan.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Instalasi dan Menjalankan Proyek
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Ikuti langkah-langkah di bawah ini untuk menjalankan proyek ini di mesin lokal Anda.
+
+### Prasyarat
+
+Pastikan Anda sudah menginstal [Node.js](https://nodejs.org/) (disarankan versi LTS) dan `npm` atau `yarn`.
+
+### Langkah-langkah
+
+1.  **Clone repositori ini:**
+    ```bash
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    cd your-repo-name
+    ```
+
+2.  **Instal semua dependensi:**
+    ```bash
+    npm install
+    ```
+    atau jika Anda menggunakan yarn:
+    ```bash
+    yarn install
+    ```
+
+3.  **Jalankan server pengembangan:**
+    ```bash
+    npm run dev
+    ```
+    atau
+    ```bash
+    yarn dev
+    ```
+
+4.  **Buka browser Anda** dan kunjungi `http://localhost:5173` (atau port lain yang ditampilkan di terminal Anda).
+
+---
+
+## 📸 Tampilan Aplikasi
+
+*(Ganti placeholder di bawah ini dengan screenshot aplikasi Anda)*
+
+<table>
+  <tr>
+    <td align="center"><strong>Light Mode</strong></td>
+    <td align="center"><strong>Dark Mode</strong></td>
+  </tr>
+  <tr>
+    <td><img src="path/to/light-mode-screenshot.png" alt="Light Mode"></td>
+    <td><img src="path/to/dark-mode-screenshot.png" alt="Dark Mode"></td>
+  </tr>
+</table>
+
+---
+
+## 📄 Lisensi
+
+Proyek ini dilisensikan di bawah **MIT License**. Lihat file `LICENSE` untuk detail lebih lanjut.
+
+created by **oxa defrizal khasay**
