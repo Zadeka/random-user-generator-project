@@ -70,23 +70,6 @@ Pastikan Anda sudah menginstal [Node.js](https://nodejs.org/) (disarankan versi 
 
 ---
 
-## 📸 Tampilan Aplikasi
-
-*(Ganti placeholder di bawah ini dengan screenshot aplikasi Anda)*
-
-<table>
-  <tr>
-    <td align="center"><strong>Light Mode</strong></td>
-    <td align="center"><strong>Dark Mode</strong></td>
-  </tr>
-  <tr>
-    <td><img src="path/to/light-mode-screenshot.png" alt="Light Mode"></td>
-    <td><img src="path/to/dark-mode-screenshot.png" alt="Dark Mode"></td>
-  </tr>
-</table>
-
----
-
 ## 📄 Lisensi
 
 Proyek ini dilisensikan di bawah **MIT License**. Lihat file `LICENSE` untuk detail lebih lanjut.
